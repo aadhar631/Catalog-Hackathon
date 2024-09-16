@@ -22,59 +22,18 @@ This repository contains a C++ program that uses Gaussian Elimination to solve a
 
    - Download the `nlohmann/json` header file from [nlohmann/json GitHub](https://github.com/nlohmann/json) and place it in your project directory or install it using a package manager.
 
-### 4. Compile the Code
+### 4. Run the Program
 
-   - **Using Command Line**:
-     - For GCC or Clang:
-       ```sh
-       g++ -o my_program main.cpp
-       ```
-     - For Windows with MinGW:
-       ```sh
-       g++ -o my_program.exe main.cpp
-       ```
-     - If you need to include the JSON library explicitly:
-       ```sh
-       g++ -I/path/to/json/include -o my_program main.cpp
-       ```
+   - Open the project directory in Visual Studio Code or your preferred IDE.
 
-   - **Using CMake** (if you have a `CMakeLists.txt` file):
-     - Create a `CMakeLists.txt` file with the following content:
-       ```cmake
-       cmake_minimum_required(VERSION 3.10)
-       project(MyProject)
+   - Ensure the json.hpp file is in the same directory as your source code.
 
-       set(CMAKE_CXX_STANDARD 17)
-
-       include_directories(/path/to/json/include)
-       add_executable(my_program main.cpp)
-       ```
-     - Run the following commands:
-       ```sh
-       mkdir build
-       cd build
-       cmake ..
-       make
-       ```
-
-### 5. Run the Program
-
-   - **On Unix-like Systems**:
+   - Open the main source file (e.g., shamir.cpp) and ensure it includes the JSON library:
      ```sh
-     ./my_program
+     #include "json.hpp"
      ```
-   - **On Windows**:
-     ```sh
-     my_program.exe
-     ```
+   - Use your IDE's build and run functionality to compile and execute the program. For most IDEs, you can press a "Run" or "Build and Run" button to compile and execute the code.
+     
+### 5. Verify Output
 
-### 6. Verify Output
-
-   - Check the console output to ensure it matches your expectations.
-
-## Troubleshooting
-
-- **Compiler Errors**: Ensure all required libraries and dependencies are correctly linked.
-- **File Paths**: Verify the path to `input.json` and make sure it’s accessible.
-- **Library Version**: Ensure you’re using a compatible version of the `nlohmann/json` library if you encounter issues.
-
+   - Check the console output to ensure it matches your expectations
